@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <title>JGL Base</title>
+        <script>
+         function main(){
+           fetch("http://localhost:3000/" + document.getElementById("l").value, { method: "POST", body: document.getElementById("data").value }); 
+         }
+        </script>
+        
+
+            Location: <input id="l" type="text"> 
+            Data: <input type="text" id="data">
+            <button onclick="main()">Send Data</button>
+        </body>
+</html>
